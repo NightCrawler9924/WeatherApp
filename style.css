@@ -1,0 +1,102 @@
+/* Body - Dark Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2f2f2f, #121212);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Main Container */
+.weather-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffdd57;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Container */
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input Field */
+#cityInput {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #ffdd57;
+    outline: none;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Animation */
+#cityInput:focus {
+    background-color: #444;
+    border-color: #ffb74d;
+    box-shadow: 0 0 10px rgba(255, 183, 77, 0.5);
+}
+
+/* Button Style */
+#submitBtn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #ffdd57;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+#submitBtn:hover {
+    background-color: #ffb74d;
+    transform: scale(1.05);
+}
+
+/* Weather Data Section */
+.weather-data {
+    margin-top: 30px;
+    display: none;  /* Initially hidden */
+}
+
+/* Weather Data Styling */
+#location, #temperature, #details {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#temperature {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+#details p {
+    margin: 5px 0;
+}
